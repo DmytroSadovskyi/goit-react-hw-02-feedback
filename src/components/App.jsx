@@ -28,7 +28,7 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const total = good + neutral + bad;
 
-    return total === 0 ? '' : `${Math.round((good / total) * 100)}%`;
+    return `${Math.round((good / total) * 100)}%`;
   };
 
   render() {
